@@ -4,8 +4,14 @@
   margin: 0;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
   background: #1e1e1e;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
