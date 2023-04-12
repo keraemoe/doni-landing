@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css'
 import Header from '@/components/Header/Header'
 import Info from '@/components/Info/Info'
 import Projects from '@/components/Projects/Projects'
+import Stack from '@/components/Stack/Stack'
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <Info />
       <Projects />
+      <Stack />
     </>
   )
 }
