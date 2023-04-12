@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { Autoplay, Grid, Pagination } from "swiper";
 
 const UICard = () => {
@@ -76,24 +77,25 @@ const UICard = () => {
                 pagination={{
                     clickable: true,
                 }}
+
                 autoplay={{
                     delay: 1500,
                 }}
-                modules={[Autoplay, Grid, Pagination]}
+                navigation={true}
+                loop={true}
+                modules={[Pagination, Autoplay, Grid, Pagination]}
                 className="project_slider"
             >
                 <SwiperSlide>
                     {slides.map((slide) => (
-                        <div className={s.slides}>
-                            <div className={s.card}>
-                                <h1>{slide.tag}</h1>
-                                <p>{slide.info}</p>
-                                <div className={s.stack}>
-                                    <button>{slide.stackone}</button>
-                                    <button>{slide.stacktwo}</button>
-                                </div>
-                                <img src={slide.image} alt="image" />
+                        <div className={s.card}>
+                            <h1>{slide.tag}</h1>
+                            <p>{slide.info}</p>
+                            <div className={s.stack}>
+                                <button>{slide.stackone}</button>
+                                <button>{slide.stacktwo}</button>
                             </div>
+                            <img src={slide.image} alt="image" />
                         </div>
                     ))}
                 </SwiperSlide>
