@@ -86,6 +86,10 @@
           height: 16px;
         }
       }
+      .btn_save:hover{
+        transition: 0.7s;
+        color:  rgb(96, 26, 247) ;
+      }
       .btn_whatsapp {
         gap: 10px;
         font-family: "Raleway";
@@ -100,6 +104,12 @@
         cursor: pointer;
         border: 1px solid rgba(123, 74, 226, 0.5);
         border-radius: 16px;
+      }
+      .btn_whatsapp:hover{
+        background-color: transparent;
+        border: 1px solid rgb(96, 26, 247);
+        transition: 0.7s;
+        color:  rgb(96, 26, 247) ;
       }
     }
   }
