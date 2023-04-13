@@ -1,9 +1,18 @@
 import React from "react";
 import s from "./Header.module.scss";
+import { motion } from "framer-motion";
 const Header = () => {
   return (
     <div className={s.container}>
-      <div className={s.content}>
+      <motion.div
+           initial="hidden"
+           transition={{ duration: 0.7 }}
+           whileInView="visible"
+           variants={{
+             hidden: { y: -20 , scale: 0.9},
+             visible: { y: 10 , scale: 1},
+           }}
+      className={s.content}>
         <img className={s.header_logo} src="./Logo.svg" alt="logo" />
         <ul>
           <li>
@@ -28,7 +37,7 @@ const Header = () => {
             <a href="">Contato</a>
           </li>
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 };

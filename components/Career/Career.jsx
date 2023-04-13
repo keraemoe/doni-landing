@@ -2,6 +2,7 @@ import React from "react";
 import s from "./Career.module.scss";
 import { career } from "../constants/Career";
 import CareerCard from "../CareerCard/CareerCard";
+import { motion } from "framer-motion";
 
 const Career = () => {
   return (
@@ -9,8 +10,24 @@ const Career = () => {
       <div className={s.container}>
         <div className={s.content}>
           <div className={s.first_block}>
-            <button>💼 Carreira</button>
-            <h1>Trajetória até aqui</h1>
+            <motion.button
+                 initial="hidden"
+                 transition={{ duration: 0.7 }}
+                 whileInView="visible"
+                 variants={{
+                   hidden: { scale: 0 },
+                   visible: { scale: 1 },
+                 }}
+            >💼 Carreira</motion.button>
+            <motion.h1
+                 initial="hidden"
+                 transition={{ duration: 0.7 }}
+                 whileInView="visible"
+                 variants={{
+                   hidden: { scale: 0 },
+                   visible: { scale: 1 },
+                 }}
+            >Trajetória até aqui</motion.h1>
           </div>
           <div className={s.third_block}>
      <CareerCard/>
