@@ -7,6 +7,7 @@
     align-items: center;
     margin-top: 140px;
     flex-direction: column;
+    height: 100vh;
     button {
       font-family: "Raleway";
       font-style: normal;
@@ -20,6 +21,7 @@
       width: 234px;
       height: 45px;
       border: none;
+      cursor: pointer;
     }
     h1 {
       padding-top: 28px;
