@@ -36,9 +36,9 @@ const Hero = () => {
           <img src="./hero.png" alt="hero_img" />
         </div>
         <div className={s.save_and_whatsapp}>
-          <button className={s.btn_save}>
+          <a href="/resumejpg.pdf" className={s.btn_save}>
             Baixar CV <img src="./save.png" alt="save" />
-          </button>
+          </a>
           <button className={s.btn_whatsapp}>
             <img src="./Whatsapp.png" alt="whatsapp" /> Vamos conversar{" "}
           </button>
