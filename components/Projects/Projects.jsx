@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import s from './Projects.module.scss'
 import UICard from '../UICard/UICard';
+import { motion } from 'framer-motion'
 
 const Projects = () => {
     const slides = [
@@ -65,28 +66,108 @@ const Projects = () => {
         <>
             <div className={s.container}>
                 <div className={s.projects}>
-                    <button>🔗 Portfólio</button>
+                    <motion.button
+                        initial="hidden"
+                        transition={{ duration: 0.7 }}
+                        whileInView="visible"
+                        variants={{
+                            hidden: { scale: 0 },
+                            visible: { scale: 1 },
+                        }}
+                    >🔗 Portfólio</motion.button>
                     <div className={s.tag}>
-                        <h1>Trabalhos e projetos</h1>
+                        <motion.h1
+                            initial="hidden"
+                            transition={{ duration: 0.7 }}
+                            whileInView="visible"
+                            variants={{
+                                hidden: { scale: 0 },
+                                visible: { scale: 1 },
+                            }}
+                        >Trabalhos e projetos</motion.h1>
                         <div className={s.tab}>
-                            <button className={s.tab_btn}> <img src="/ui.png" alt="ui" /> UI Design</button>
-                            <button className={s.tab_btn}> <img src="/pal.svg" alt="pal" /> Design</button>
-                            <button className={s.tab_btn}> <img src="/ui.png" alt="ui" /> UI Design</button>
+                            <motion.button
+                                initial="hidden"
+                                transition={{ duration: 0.5 }}
+                                whileInView="visible"
+                                variants={{
+                                    hidden: { scale: 0 },
+                                    visible: { scale: 1 },
+                                }}
+                                className={s.tab_btn}> <img src="/ui.png" alt="ui" /> UI Design</motion.button>
+                            <motion.button
+                                initial="hidden"
+                                transition={{ duration: 0.6 }}
+                                whileInView="visible"
+                                variants={{
+                                    hidden: { scale: 0 },
+                                    visible: { scale: 1 },
+                                }}
+                                className={s.tab_btn}> <img src="/pal.svg" alt="pal" /> Design</motion.button>
+                            <motion.button
+                                initial="hidden"
+                                transition={{ duration: 0.7 }}
+                                whileInView="visible"
+                                variants={{
+                                    hidden: { scale: 0 },
+                                    visible: { scale: 1 },
+                                }}
+                                className={s.tab_btn}> <img src="/ui.png" alt="ui" /> UI Design</motion.button>
                         </div>
                     </div>
-                    <div className={s.cards}>
+                    <motion.div
+                        initial="hidden"
+                        transition={{ duration: 0.6 }}
+                        whileInView="visible"
+                        variants={{
+                            hidden: { scale: 0 },
+                            visible: { scale: 1 },
+                        }}
+                        className={s.cards}>
                         {slides.map((slide) => (
                             <div className={s.card}>
-                                <h1>{slide.tag}</h1>
-                                <p>{slide.info}</p>
-                                <div className={s.stack}>
+                                <motion.h1
+                                    initial="hidden"
+                                    transition={{ duration: 0.5 }}
+                                    whileInView="visible"
+                                    variants={{
+                                        hidden: { scale: 0 },
+                                        visible: { scale: 1 },
+                                    }}
+                                >{slide.tag}</motion.h1>
+                                <motion.p
+                                    initial="hidden"
+                                    transition={{ duration: 0.7 }}
+                                    whileInView="visible"
+                                    variants={{
+                                        hidden: { scale: 0 },
+                                        visible: { scale: 1 },
+                                    }}
+                                >{slide.info}</motion.p>
+                                <motion.div
+                                    initial="hidden"
+                                    transition={{ duration: 0.8 }}
+                                    whileInView="visible"
+                                    variants={{
+                                        hidden: { scale: 0 },
+                                        visible: { scale: 1 },
+                                    }}
+                                    className={s.stack}>
                                     <button>{slide.stackone}</button>
                                     <button>{slide.stacktwo}</button>
-                                </div>
-                                <img src={slide.image} alt="image" />
+                                </motion.div>
+                                <motion.img
+                                    initial="hidden"
+                                    transition={{ duration: 0.7 }}
+                                    whileInView="visible"
+                                    variants={{
+                                        hidden: { scale: 0 },
+                                        visible: { scale: 1 },
+                                    }}
+                                    src={slide.image} alt="image" />
                             </div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </>
