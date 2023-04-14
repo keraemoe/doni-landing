@@ -20,6 +20,7 @@
       height: 45px;
       border: none;
       padding: 15px;
+      margin-top: 40px;
     }
     .tag {
       display: flex;
@@ -180,6 +181,16 @@
             height: 60px;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    .projects {
+      button {
+        margin-top: 70px;
       }
     }
   }
