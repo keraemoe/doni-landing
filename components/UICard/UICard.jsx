@@ -86,19 +86,9 @@ const UICard = () => {
                 modules={[Pagination, Autoplay, Grid, Pagination]}
                 className="project_slider"
             >
-                <SwiperSlide>
-                    {slides.map((slide) => (
-                        <div className={s.card}>
-                            <h1>{slide.tag}</h1>
-                            <p>{slide.info}</p>
-                            <div className={s.stack}>
-                                <button>{slide.stackone}</button>
-                                <button>{slide.stacktwo}</button>
-                            </div>
-                            <img src={slide.image} alt="image" />
-                        </div>
-                    ))}
-                </SwiperSlide>
+
+                   
+
             </Swiper>
         </>
     );
