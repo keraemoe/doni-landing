@@ -59,16 +59,17 @@ const Projects = () => {
                         </div>
                     </div>
                     <motion.div
-                        initial="hidden"
-                        transition={{ duration: 0.7 }}
-                        whileInView="visible"
-                        variants={{
-                            hidden: { scale: 0 },
-                            visible: { scale: 1 },
-                        }}
                         className={s.cards}>
                         {slides.map((item) => (
-                            <div className={s.card}>
+                            <motion.div
+                                initial="hidden"
+                                transition={{ duration: 0.7 }}
+                                whileInView="visible"
+                                variants={{
+                                    hidden: { scale: 0 },
+                                    visible: { scale: 1 },
+                                }}
+                                className={s.card}>
                                 <motion.h1
                                     initial="hidden"
                                     transition={{ duration: 0.5 }}
@@ -108,7 +109,7 @@ const Projects = () => {
                                         visible: { scale: 1 },
                                     }}
                                     src={item.image} alt="image" />
-                            </div>
+                            </motion.div>
                         ))}
                     </motion.div>
                 </div>

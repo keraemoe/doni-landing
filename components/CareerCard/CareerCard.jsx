@@ -18,7 +18,6 @@ const CareerCard = () => {
         >
           Área profissional <b>2016 · Atualmente</b>
         </motion.h6>
-
         {career.map((item) => (
           <motion.div
             initial="hidden"
@@ -39,7 +38,6 @@ const CareerCard = () => {
           </motion.div>
         ))}
       </div>
-
       <div className={s.second_cards}>
         <motion.h6
           initial="hidden"
