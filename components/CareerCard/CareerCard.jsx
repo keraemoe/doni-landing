@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./CareerCard.module.scss";
-import { career, career2 } from "../constants/Career";
+import { career, career2 } from "../../constants/constants";
 import { motion } from "framer-motion";
 
 const CareerCard = () => {
