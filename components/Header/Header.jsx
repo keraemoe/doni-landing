@@ -13,7 +13,7 @@ const Header = () => {
              visible: { y: 10 , scale: 1},
            }}
       className={s.content}>
-        <img className={s.header_logo} src="./Logo.svg" alt="logo" />
+        <img className={s.header_logo} src="/Logo.svg" alt="logo" />
         <ul>
           <li>
             <a href="">Home</a>

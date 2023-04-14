@@ -26,7 +26,7 @@ const Hero = () => {
                  visible: { scale: 1 },
                }}
           href="">
-            <img src="./linkedin.svg" alt="in" />
+            <img src="/linkedin.svg" alt="in" />
           </motion.a>
           <motion.a 
                initial="hidden"
@@ -37,7 +37,7 @@ const Hero = () => {
                  visible: { scale: 1 },
                }}
           href="">
-            <img src="./githubHeader.png" alt="github" />
+            <img src="/githubHeader.png" alt="github" />
           </motion.a>
           <motion.a
                initial="hidden"
@@ -48,7 +48,7 @@ const Hero = () => {
                  visible: { scale: 1 },
                }}
           href="">
-            <img src="./behance.svg" alt="behance" />
+            <img src="/behance.svg" alt="behance" />
           </motion.a>
         </motion.div>
         <div className={s.title}>
@@ -90,7 +90,7 @@ const Hero = () => {
                    visible: { scale: 1 },
                  }}
             href="">
-              <img src="./linkedin.svg" alt="in" />
+              <img src="/linkedin.svg" alt="in" />
             </motion.a>
             <motion.a
                  initial="hidden"
@@ -101,7 +101,7 @@ const Hero = () => {
                    visible: { scale: 1 },
                  }}
             href="">
-              <img src="./githubHeader.png" alt="github" />
+              <img src="/githubHeader.png" alt="github" />
             </motion.a>
             <motion.a
                  initial="hidden"
@@ -112,7 +112,7 @@ const Hero = () => {
                    visible: { scale: 1 },
                  }}
             href="">
-              <img src="./behance.svg" alt="behance" />
+              <img src="/behance.svg" alt="behance" />
             </motion.a>
           </div>
         </div>
@@ -125,7 +125,7 @@ const Hero = () => {
                visible: { scale: 1 },
              }}
         className={s.images}>
-          <img src="./hero.png" alt="hero_img" />
+          <img src="/hero.png" alt="hero_img" />
         </motion.div>
         <div className={s.save_and_whatsapp}>
           <motion.a
@@ -137,7 +137,7 @@ const Hero = () => {
                  visible: { scale: 1 },
                }}
           href="/resumejpg.pdf" className={s.btn_save}>
-            Baixar CV <img src="./save.png" alt="save" />
+            Baixar CV <img src="/save.png" alt="save" />
           </motion.a>
           <motion.button
                initial="hidden"
@@ -148,7 +148,7 @@ const Hero = () => {
                  visible: { scale: 1 },
                }}
           className={s.btn_whatsapp}>
-            <img src="./Whatsapp.png" alt="whatsapp" /> Vamos conversar{" "}
+            <img src="/Whatsapp.png" alt="whatsapp" /> Vamos conversar{" "}
           </motion.button>
         </div>
       </div>

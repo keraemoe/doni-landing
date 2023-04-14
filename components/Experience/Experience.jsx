@@ -16,7 +16,7 @@ const Experience = () => {
                  visible: { scale: 1 },
                }}
           className={s.card}>
-            <img src="./Programador.svg" alt="Programador" />
+            <img src="/Programador.svg" alt="Programador" />
             <h2>3 anos como</h2>
             <h1>Programador</h1>
           </motion.div>
@@ -29,7 +29,7 @@ const Experience = () => {
                  visible: { scale: 1 },
                }}
           className={s.card}>
-            <img src="./Trabalhos.png" alt="Trabalhos" />
+            <img src="/Trabalhos.png" alt="Trabalhos" />
             <h2>7 anos de</h2>
             <h1>Trabalhos</h1>
           </motion.div>{" "}
@@ -42,7 +42,7 @@ const Experience = () => {
                  visible: { scale: 1 },
                }}
           className={s.card}>
-            <img src="./Designer.png" alt="Designer" />
+            <img src="/Designer.png" alt="Designer" />
             <h2>4 anos como</h2>
             <h1>Designer</h1>
           </motion.div>
