@@ -60,7 +60,7 @@ const Projects = () => {
                     </div>
                     <motion.div
                         initial="hidden"
-                        transition={{ duration: 0.6 }}
+                        transition={{ duration: 0.7 }}
                         whileInView="visible"
                         variants={{
                             hidden: { scale: 0 },
