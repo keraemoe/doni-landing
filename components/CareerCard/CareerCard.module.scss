@@ -186,8 +186,6 @@
   }
 }
 
-
-
 @media screen and (max-width: 1100px) {
   .global {
     display: flex;
@@ -242,21 +240,18 @@
   }
 }
 
-
-
-
 @media screen and (max-width: 1024px) {
   .global {
     display: flex;
     justify-content: center;
-
+    padding: 20px;
     .first_cards {
       align-items: center;
       h6 {
         font-size: 24px;
       }
       .third_content {
-        width: 150%;
+        width: 140%;
         h1 {
           font-size: 17px;
         }
@@ -279,7 +274,7 @@
         font-size: 24px;
       }
       .third_content {
-        width: 150%;
+        width: 140%;
         h1 {
           font-size: 17px;
         }
@@ -298,70 +293,179 @@
     }
   }
 }
-
-
 
 @media screen and (max-width: 972px) {
   .global {
     .first_cards {
       .third_content {
-        width: 170%;
+        width: 150%;
       }
     }
     .second_cards {
       .third_content {
-        width: 170%;
+        width: 150%;
       }
     }
   }
 }
 
-
-
 @media screen and (max-width: 888px) {
-    .global {
-      .first_cards {
-        h6{
-            white-space: nowrap;
-        }
-        .third_content {
-          width: 180%;
-        }
+  .global {
+    .first_cards {
+      h6 {
+        white-space: nowrap;
       }
-      .second_cards {
-        h6{
-            white-space: nowrap;
-
-        }
-        .third_content {
-          width: 180%;
-h1{font-size: 16px;}
+      .third_content {
+        width: 150%;
+      }
+    }
+    .second_cards {
+      h6 {
+        white-space: nowrap;
+      }
+      .third_content {
+        width: 150%;
+        h1 {
+          font-size: 16px;
         }
       }
     }
   }
+}
 
-
-
-
-  @media screen and (max-width: 768px){
-    .global{
-        display: flex;
-        flex-direction: column;
-        .first_cards{
-           .third_content{
-            width: 100%;
-           }
-
-        }
-        .second_cards{
-            .third_content{
-                width: 100%;
-               }
-        }
+@media screen and (max-width: 768px) {
+  .global {
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    .first_cards {
+      .third_content {
+        width: 100%;
+      }
+    }
+    .second_cards {
+      .third_content {
+        width: 100%;
+      }
     }
   }
+}
 
+@media screen and (max-width: 600px) {
+  .global {
+    display: flex;
+    flex-direction: column;
+    .first_cards {
+      .third_content {
+        width: 150%;
+      }
+    }
+    .second_cards {
+      .third_content {
+        width: 150%;
+      }
+    }
+  }
+}
 
-  
-  
+@media screen and (max-width: 500px) {
+  .global {
+    display: flex;
+    flex-direction: column;
+    .first_cards {
+      .third_content {
+        width: 150%;
+        h1 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+        }
+        .dates {
+          h2 {
+            font-size: 12px;
+          }
+          h3 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .second_cards {
+      .third_content {
+        width: 150%;
+        h1 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+        }
+        .dates {
+          h2 {
+            font-size: 12px;
+          }
+          h3 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .global {
+    display: flex;
+    flex-direction: column;
+    .first_cards {
+      .third_content {
+        width: 200%;
+        h1 {
+          white-space: nowrap;
+          font-size: 12px;
+        }
+        p {
+          font-size: 11px;
+        }
+        .dates {
+          gap: 5px;
+          h2 {
+            white-space: nowrap;
+
+            font-size: 11px;
+          }
+          h3 {
+            white-space: nowrap;
+
+            font-size: 11px;
+          }
+        }
+      }
+    }
+    .second_cards {
+      .third_content {
+        width: 200%;
+        h1 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+        }
+        .dates {
+          gap: 5px;
+          h2 {
+            white-space: nowrap;
+
+            font-size: 11px;
+          }
+          h3 {
+            white-space: nowrap;
+
+            font-size: 11px;
+            
+          }
+        }
+      }
+    }
+  }
+}
