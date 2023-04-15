@@ -1,74 +1,9 @@
 ﻿import React from 'react';
 import s from './Stack.module.scss'
 import { motion } from 'framer-motion'
+import { tech, outtech } from '../../constants/constants'
 
 const Stack = () => {
-    const tech = [
-        {
-            img: '/React.png'
-        },
-        {
-            img: '/Javascript.png'
-        },
-        {
-            img: '/TypeScript.png'
-        },
-        {
-            img: '/Nextjs.png'
-        },
-        {
-            img: '/Group 1.png'
-        },
-        {
-            img: '/HTML5.png'
-        },
-        {
-            img: '/Figma.png'
-        },
-        {
-            img: '/Github.png'
-        },
-        {
-            img: '/Shape.png'
-        },
-        {
-            img: '/Insomnia.png'
-        },
-    ]
-
-    const outtech = [
-        {
-            img: '/bitbucket.png'
-        },
-        {
-            img: '/Vue.png'
-        },
-        {
-            img: '/Nodejs.png'
-        },
-        {
-            img: '/TailwindCSS.png'
-        },
-        {
-            img: '/Sass.png'
-        },
-        {
-            img: '/Python.png'
-        },
-        {
-            img: '/Group 26.png'
-        },
-        {
-            img: '/Union.png'
-        },
-        {
-            img: '/Group 27.png'
-        },
-        {
-            img: '/Docker.png'
-        },
-
-    ]
     return (
         <>
             <div className={s.container}>

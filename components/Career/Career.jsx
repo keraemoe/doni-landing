@@ -10,26 +10,26 @@ const Career = () => {
         <div className={s.content}>
           <div className={s.first_block}>
             <motion.button
-                 initial="hidden"
-                 transition={{ duration: 0.7 }}
-                 whileInView="visible"
-                 variants={{
-                   hidden: { scale: 0 },
-                   visible: { scale: 1 },
-                 }}
+              initial="hidden"
+              transition={{ duration: 0.7 }}
+              whileInView="visible"
+              variants={{
+                hidden: { scale: 0 },
+                visible: { scale: 1 },
+              }}
             >💼 Carreira</motion.button>
             <motion.h1
-                 initial="hidden"
-                 transition={{ duration: 0.7 }}
-                 whileInView="visible"
-                 variants={{
-                   hidden: { scale: 0 },
-                   visible: { scale: 1 },
-                 }}
+              initial="hidden"
+              transition={{ duration: 0.7 }}
+              whileInView="visible"
+              variants={{
+                hidden: { scale: 0 },
+                visible: { scale: 1 },
+              }}
             >Trajetória até aqui</motion.h1>
           </div>
           <div className={s.third_block}>
-     <CareerCard/>
+            <CareerCard />
           </div>
         </div>
       </div>
