@@ -28,6 +28,7 @@ display: none;
   .swiper-wrapper{
     gap: 50%;
   }
+  
 }
 @media screen and (max-width: 370px) {
   .swiper-wrapper{
