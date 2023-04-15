@@ -1,9 +1,8 @@
 import React from "react";
 import s from "./Career.module.scss";
-import { career } from "../constants/Career";
 import CareerCard from "../CareerCard/CareerCard";
 import { motion } from "framer-motion";
-
+import { career } from "@/constants/constants";
 const Career = () => {
   return (
     <>

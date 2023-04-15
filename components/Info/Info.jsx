@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import s from './Info.module.scss'
+import { motion } from 'framer-motion'
 
 const Info = () => {
     return (
@@ -7,15 +8,47 @@ const Info = () => {
             <div className={s.container}>
                 <div className={s.info}>
                     <div className={s.first}>
-                        <div className={s.back}>
+                        <motion.div
+                            initial="hidden"
+                            transition={{ duration: 0.7 }}
+                            whileInView="visible"
+                            variants={{
+                                hidden: { scale: 0 },
+                                visible: { scale: 1 },
+                            }}
+                            className={s.back}>
                             <img src="/back_ava.png" alt="" />
                             <img src="/man.png" alt="" />
-                        </div>
+                        </motion.div>
                     </div>
                     <div className={s.second}>
-                        <button>🧐 Sobre mim</button>
-                        <h1>Washington Henrique <br /> Fernandes de Sousa</h1>
-                        <p>
+                        <motion.button
+                            initial="hidden"
+                            transition={{ duration: 0.5 }}
+                            whileInView="visible"
+                            variants={{
+                                hidden: { scale: 0 },
+                                visible: { scale: 1 },
+                            }}
+                        >🧐 Sobre mim</motion.button>
+                        <motion.h1
+                            initial="hidden"
+                            transition={{ duration: 0.6 }}
+                            whileInView="visible"
+                            variants={{
+                                hidden: { scale: 0 },
+                                visible: { scale: 1 },
+                            }}
+                        >Washington Henrique <br /> Fernandes de Sousa</motion.h1>
+                        <motion.p
+                            initial="hidden"
+                            transition={{ duration: 0.7 }}
+                            whileInView="visible"
+                            variants={{
+                                hidden: { scale: 0 },
+                                visible: { scale: 1 },
+                            }}
+                        >
                             👋 Me chamo Washington Henrique Fernandes de Sousa, mas pode me chamar apenas de Henrique. Prazer!
                             <br />
                             <br />
@@ -27,7 +60,7 @@ const Info = () => {
                             <br />
                             <br />
                             🚀 Tentando ser um pouquinho melhor do que ontem todos dias.
-                        </p>
+                        </motion.p>
                     </div>
                 </div>
             </div>

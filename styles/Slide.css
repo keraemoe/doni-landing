@@ -1,0 +1,36 @@
+.swiper {
+  display: flex;
+  gap: 20px;
+
+}
+
+.swiper-wrapper{
+  display: flex;
+  gap: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-wrapper{
+    gap: 10%;
+  }
+  .swiper-button-next{
+display: none;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .swiper-wrapper{
+    gap: 17%;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .swiper-wrapper{
+    gap: 50%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .swiper-wrapper{
+    gap: 100%;
+  }
+}

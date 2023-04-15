@@ -84,3 +84,62 @@ export const career2 = [
     data: "Abril/2021 · Atualmente",
   },
 ];
+
+export const slides = [
+  {
+    tag: "Move.it1",
+    info: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+    stackone: "React JS",
+    stacktwo: "Vue JS",
+    image: "/image.png",
+  },
+  {
+    tag: "Move.it2",
+    info: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+    stackone: "React JS",
+    stacktwo: "Next",
+    image: "/image.png",
+  },
+  {
+    tag: "Move.it3",
+    info: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+    stackone: "JS",
+    stacktwo: "HTML & CSS",
+    image: "/image.png",
+  },
+  {
+    tag: "Move.it4",
+    info: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+    stackone: "Typescript",
+    stacktwo: "JS",
+    image: "/image.png",
+  },
+  {
+    tag: "Move.it5",
+    info: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+    stackone: "Angular",
+    stacktwo: "Flutter",
+    image: "/image.png",
+  },
+  {
+    tag: "Move.it6",
+    info: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+    stackone: "Python",
+    stacktwo: "React JS",
+    image: "/image.png",
+  },
+  {
+    tag: "Move.it7",
+    info: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+    stackone: "JS",
+    stacktwo: "HTML & CSS",
+    image: "/image.png",
+  },
+  {
+    tag: "Move.it8",
+    info: "Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.",
+    stackone: "React JS",
+    stacktwo: "Typescript",
+    image: "/image.png",
+  },
+];
