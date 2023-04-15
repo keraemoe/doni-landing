@@ -17,7 +17,7 @@ const Footer_end = () => {
             <img src="/behance.svg" alt="behance" />
           </a>
         </div>
-        <h2>Copyright © Henrique Sousa </h2>
+        <h2>Copyright © Henrique Sousa</h2>
       </div>
     </div>
   );
