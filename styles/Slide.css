@@ -52,4 +52,5 @@
 .swiper-button-prev:hover {
   background: rgba(123, 74, 226, 0.1);
   transition: 0.4s;
+  border: none;
 }
