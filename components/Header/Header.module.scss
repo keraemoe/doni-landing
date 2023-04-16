@@ -30,7 +30,10 @@
       li {
         list-style: none;
         background-color: transparent;
-
+        a:hover {
+          color: rgba(123, 74, 226, 0.5);
+          transition: 0.4s;
+        }
         a {
           text-decoration: none;
           font-family: "Raleway";
@@ -105,27 +108,26 @@
 }
 
 @media screen and (max-width: 840px) {
-    .container {
-      .content {
-        height: 60px;
-        .header_logo {
-          height: 20px;
-        }
-        ul {
-          gap: 10px;
-          li {
-            a {
-              font-size: 12px;
-            }
+  .container {
+    .content {
+      height: 60px;
+      .header_logo {
+        height: 20px;
+      }
+      ul {
+        gap: 10px;
+        li {
+          a {
+            font-size: 12px;
           }
         }
       }
     }
   }
-
-  @media screen and (max-width: 768px) {
-.container{
-    display: none;
 }
-  
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: none;
   }
+}
