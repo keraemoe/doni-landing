@@ -10,8 +10,6 @@ import { motion } from "framer-motion";
 import Testimony from "../Testimony/Testimony";
 
 const TestimonyCard = () => {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
   return (
     <>
       <div className={s.container}>
@@ -21,11 +19,9 @@ const TestimonyCard = () => {
           spaceBetween={30}
           centeredSlides={true}
           loop={true}
-          onInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
           }}
           modules={[Autoplay, Navigation]}
           className="mySwiper"
@@ -57,10 +53,12 @@ const TestimonyCard = () => {
               </motion.div>{" "}
             </SwiperSlide>
           ))}
-          <div style={{ color: 'white', cursor: 'pointer' }} ref={prevRef}>Prev</div>
-          <div style={{ color: 'white', cursor: 'pointer' }} ref={nextRef}>Next</div>
         </Swiper>
-      </div>
+        <div className={s.navigate}>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div >
     </>
   );
 };

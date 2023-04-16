@@ -2,7 +2,6 @@ import React from "react";
 import s from "./Testimony.module.scss";
 import TestimonyCard from "../TestimonyCard/TestimonyCard";
 import { motion } from "framer-motion";
-import { Navigation } from "swiper";
 
 const Testimony = () => {
   return (

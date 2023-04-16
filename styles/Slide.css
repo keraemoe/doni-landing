@@ -1,37 +1,55 @@
 .swiper {
   display: flex;
   gap: 20px;
-
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   display: flex;
   gap: 2%;
 }
 
 @media screen and (max-width: 768px) {
-  .swiper-wrapper{
+  .swiper-wrapper {
     gap: 10%;
   }
-  .swiper-button-next{
-display: none;
+  .swiper-button-next {
+    display: none;
   }
 }
 
 @media screen and (max-width: 646px) {
-  .swiper-wrapper{
+  .swiper-wrapper {
     gap: 17%;
   }
 }
 
 @media screen and (max-width: 646px) {
-  .swiper-wrapper{
+  .swiper-wrapper {
     gap: 50%;
   }
-  
 }
 @media screen and (max-width: 370px) {
-  .swiper-wrapper{
+  .swiper-wrapper {
     gap: 100%;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #7b4ae2 !important;
+  border: 1px solid rgba(123, 74, 226, 0.5);
+  border-radius: 16px;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(123, 74, 226, 0.1);
+  transition: 0.4s;
 }
