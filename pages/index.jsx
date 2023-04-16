@@ -29,8 +29,8 @@ export default function Home() {
       <Stack />
       <Career />
       <Header />
-      <Testimony/>
-      <Footer/>
+      <Testimony />
+      <Footer />
     </>
   )
 }

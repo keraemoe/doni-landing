@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import s from "./TestimonyCard.module.scss";
 import { testimony } from "@/constants/Testimony";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,17 +7,27 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Navigation } from "swiper";
 import { motion } from "framer-motion";
+import Testimony from "../Testimony/Testimony";
 
 const TestimonyCard = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   return (
     <>
       <div className={s.container}>
         <Swiper
           autoplay={{ delay: 2000 }}
-          navigation={true}
-          slidesPerView={2.5}
+          slidesPerView={3}
           spaceBetween={30}
-          modules={[Autoplay,Navigation]}
+          centeredSlides={true}
+          loop={true}
+          onInit={(swiper) => {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+            swiper.navigation.init();
+            swiper.navigation.update();
+          }}
+          modules={[Autoplay, Navigation]}
           className="mySwiper"
         >
           {testimony.map((item) => (
@@ -47,6 +57,8 @@ const TestimonyCard = () => {
               </motion.div>{" "}
             </SwiperSlide>
           ))}
+          <div style={{ color: 'white', cursor: 'pointer' }} ref={prevRef}>Prev</div>
+          <div style={{ color: 'white', cursor: 'pointer' }} ref={nextRef}>Next</div>
         </Swiper>
       </div>
     </>
