@@ -16,7 +16,7 @@ const Header = () => {
         <img className={s.header_logo} src="/Logo.svg" alt="logo" />
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
             <a href="">Sobre mim</a>

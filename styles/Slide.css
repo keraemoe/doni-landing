@@ -54,3 +54,12 @@
   transition: 0.4s;
   border: none;
 }
+
+@media screen and (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    border-radius: 13px;
+    width: 40px !important;
+    height: 40px !important;
+  }
+}

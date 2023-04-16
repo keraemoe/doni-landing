@@ -118,6 +118,9 @@
 
 @media screen and (max-width: 768px) {
   .container {
+    .navigate {
+      width: 110px;
+    }
     .content {
       width: 120%;
       .start {
@@ -160,6 +163,14 @@
   .container {
     .content {
       width: 240%;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    .navigate {
+      display: none;
     }
   }
 }

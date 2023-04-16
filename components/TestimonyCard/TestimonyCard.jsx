@@ -15,10 +15,18 @@ const TestimonyCard = () => {
       <div className={s.container}>
         <Swiper
           autoplay={{ delay: 2000 }}
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={30}
-          centeredSlides={true}
           loop={true}
+          centeredSlides={true}
+          breakpoints={{
+            0: {
+              centeredSlides: 'true'
+            },
+            425: {
+              slidesPerView: '3',
+            }
+          }}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -54,10 +62,18 @@ const TestimonyCard = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className={s.navigate}>
+        <motion.div
+          initial="hidden"
+          transition={{ duration: 0.7 }}
+          whileInView="visible"
+          variants={{
+            hidden: { scale: 0 },
+            visible: { scale: 1 },
+          }}
+          className={s.navigate}>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-        </div>
+        </motion.div>
       </div >
     </>
   );
