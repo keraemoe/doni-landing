@@ -6,7 +6,7 @@ import { career } from "@/constants/constants";
 const Career = () => {
   return (
     <>
-      <div className={s.container}>
+      <div id="carreira" className={s.container}>
         <div className={s.content}>
           <div className={s.first_block}>
             <motion.button

@@ -7,7 +7,7 @@ import { slides } from '../../constants/constants'
 const Projects = () => {
     return (
         <>
-            <div className={s.container}>
+            <div id='partfolio' className={s.container}>
                 <div className={s.projects}>
                     <motion.button
                         initial="hidden"

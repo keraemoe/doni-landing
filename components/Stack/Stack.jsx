@@ -6,7 +6,7 @@ import { tech, outtech } from '../../constants/constants'
 const Stack = () => {
     return (
         <>
-            <div className={s.container}>
+            <div id='skill' className={s.container}>
                 <div className={s.stack}>
                     <motion.button
                         initial="hidden"

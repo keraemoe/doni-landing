@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const Info = () => {
     return (
         <>
-            <div className={s.container}>
+            <div id='sobre' className={s.container}>
                 <div className={s.info}>
                     <div className={s.first}>
                         <motion.div

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Testimony = () => {
   return (
     <>
-      <div className={s.container}>
+      <div id="rek" className={s.container}>
         <motion.button
           initial="hidden"
           transition={{ duration: 0.7 }}

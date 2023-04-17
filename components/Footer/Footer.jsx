@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <>
-      <div className={s.global}>
+      <div id="contact" className={s.global}>
         <div className={s.container}>
           <div className={s.content}>
             <motion.button

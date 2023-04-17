@@ -19,22 +19,22 @@ const Header = () => {
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Sobre mim</a>
+            <a href="#sobre">Sobre mim</a>
           </li>
           <li>
-            <a href="#">Portfólio</a>
+            <a href="#partfolio">Portfólio</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#skill">Skills</a>
           </li>
           <li>
-            <a href="#">Carreira</a>
+            <a href="#carreira">Carreira</a>
           </li>
           <li>
-            <a href="#">Recomendações</a>
+            <a href="#rek">Recomendações</a>
           </li>
           <li>
-            <a href="#">Contato</a>
+            <a href="#contact">Contato</a>
           </li>
         </ul>
       </motion.div>
