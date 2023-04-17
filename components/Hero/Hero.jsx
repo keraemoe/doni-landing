@@ -14,12 +14,12 @@ const Hero = () => {
   });
 
   useAnimationFrame((t) => {
-    const y = (1 + Math.sin(t / 800)) * -14;
+    const y = (1 + Math.sin(t / 850)) * -20;
     ref2.current.style.transform = `translateY(${y}px) `;
   });
 
   useAnimationFrame((t) => {
-    const y = (1 + Math.sin(t / 800)) * -14;
+    const y = (1 + Math.sin(t / 1000)) * -20;
     ref3.current.style.transform = `translateY(${y}px) `;
   });
 
