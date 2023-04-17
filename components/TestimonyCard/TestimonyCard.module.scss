@@ -55,7 +55,7 @@
 @media screen and (max-width: 1024px) {
   .container {
     .content {
-      width: 100%;
+      width: 110%;
       .start {
         p {
           font-size: 13px;
@@ -122,7 +122,7 @@
       width: 110px;
     }
     .content {
-      width: 120%;
+      width: 140%;
       .start {
         p {
           font-size: 12px;
@@ -162,13 +162,16 @@
 @media screen and (max-width: 646px) {
   .container {
     .content {
-      width: 240%;
+      width: 160%;
     }
   }
 }
 
 @media screen and (max-width: 425px) {
   .container {
+    .content  {
+      width: 250%;
+    }
     .navigate {
       display: none;
     }
@@ -178,7 +181,7 @@
 @media screen and (max-width: 370px) {
   .container {
     .content {
-      width: 300%;
+      width: 350%;
     }
   }
 }
