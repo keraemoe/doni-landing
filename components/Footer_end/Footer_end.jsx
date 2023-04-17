@@ -9,7 +9,7 @@ const Footer_end = () => {
           <a href="">
             <img src="/linkedin.svg" alt="in" />
           </a>
-          <a href="">
+          <a href="#">
             <img src="/githubHeader.png" alt="github" />
           </a>
 

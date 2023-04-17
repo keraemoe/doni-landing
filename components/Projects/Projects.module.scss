@@ -20,11 +20,12 @@
       height: 45px;
       border: none;
       padding: 15px;
-      margin-top: 40px;
+      margin-top: 20%;
     }
     .tag {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding-bottom: 44px;
       h1 {
         font-family: "Raleway";
@@ -36,6 +37,7 @@
       }
       .tab {
         display: flex;
+        flex-wrap: wrap;
         gap: 32px;
         .tab_btn {
           border: 1px solid rgba(123, 74, 226, 0.5);
@@ -47,6 +49,7 @@
           line-height: 20px;
           width: 184px;
           height: 60px;
+          gap: 10px;
           display: flex;
           align-items: center;
           color: rgba(123, 74, 226, 0.5);
@@ -70,7 +73,7 @@
         border: 1px solid rgba(123, 74, 226, 0.5);
         border-radius: 16px;
         width: 360px;
-        height: 460px;
+        gap: 10px;
         padding: 30px;
         h1 {
           font-family: "Raleway";
@@ -95,11 +98,14 @@
         .stack {
           display: flex;
           align-items: center;
+          button{
+            justify-content:center;
+            width: 40%;
+          }
           gap: 8px;
           button:nth-of-type(1) {
             background: rgba(123, 74, 226, 0.1);
             border-radius: 8px;
-            width: 106px;
             height: 30px;
             font-family: "Raleway";
             font-style: normal;
@@ -109,13 +115,14 @@
             display: flex;
             align-items: center;
             text-align: center;
+            // justify-content:center;
             color: #7b4ae2;
             cursor: pointer;
           }
           button:nth-of-type(2) {
             background: rgba(123, 74, 226, 0.1);
             border-radius: 8px;
-            width: 106px;
+            white-space: nowrap;
             height: 30px;
             font-family: "Raleway";
             font-style: normal;
@@ -131,8 +138,6 @@
         }
         img {
           border-radius: 8px;
-          width: 300px;
-          height: 200px;
           cursor: pointer;
         }
       }
@@ -162,6 +167,9 @@
         justify-content: center;
         gap: 30px;
       }
+      button {
+        display: none;
+      }
     }
   }
 }
@@ -188,7 +196,15 @@
 
 @media screen and (max-width: 425px) {
   .container {
+    gap: 10px;
+    width: 100%;
     .projects {
+      .cards{
+        .card{
+
+          width: 90%;
+        }
+      }
       button {
         margin-top: 70px;
       }

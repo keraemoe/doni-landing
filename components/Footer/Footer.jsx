@@ -58,7 +58,7 @@ const Footer = () => {
               >
                 <img src="/tg.png" alt="tg" />
                 <h2>E-mail:</h2>
-                <a href="">henriquesousa.dev@gmail.com</a>
+                <a href="#">henriquesousa.dev@gmail.com</a>
               </motion.div>
             </div>
             <motion.a
@@ -70,7 +70,7 @@ const Footer = () => {
                 visible: { scale: 1 },
               }}
               className={s.footer_l}
-              href=""
+              href="#"
             >
               Voltar ao topo <img src="/arrowUp.png" alt="arrowUp" />
             </motion.a>
