@@ -98,8 +98,8 @@
         .stack {
           display: flex;
           align-items: center;
-          button{
-            justify-content:center;
+          button {
+            justify-content: center;
             width: 40%;
           }
           gap: 8px;
@@ -199,9 +199,18 @@
     gap: 10px;
     width: 100%;
     .projects {
-      .cards{
-        .card{
+      .tag {
+justify-content: center;
+        h1 {
+          font-size: 25px;
+        }
+        .tab {
+          flex-direction: column;
+        }
+      }
 
+      .cards {
+        .card {
           width: 90%;
         }
       }
