@@ -1,15 +1,24 @@
-import React from "react";
+import React, {useRef} from "react";
 import s from "./Footer.module.scss";
 import Footer_end from "../Footer_end/Footer_end";
-import { motion } from "framer-motion";
+import { motion,useAnimationFrame } from "framer-motion";
 
 const Footer = () => {
+
+  const ref = useRef(null);
+
+  useAnimationFrame((t) => {
+    const y = (1 + Math.sin(t / 800)) * -10;
+    ref.current.style.transform = `translateY(${y}px) `;
+  });
+
   return (
     <>
       <div id="contact" className={s.global}>
         <div className={s.container}>
           <div className={s.content}>
             <motion.button
+            ref={ref}
               initial="hidden"
               transition={{ duration: 0.7 }}
               whileInView="visible"

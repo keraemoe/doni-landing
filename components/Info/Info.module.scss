@@ -3,13 +3,13 @@
   margin: 0 auto;
   padding-top: 50px;
   .info {
-    height: 120vh;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     gap: 50px;
+    padding-bottom: 50px;
     .first {
       display: flex;
       flex-direction: column;
@@ -51,6 +51,11 @@
         text-align: center;
         color: #7b4ae2;
         border: none;
+      }
+      button:hover{
+        border: 1px solid rgba(123, 74, 226, );
+        background-color: transparent;
+        transition: 1s ;
       }
       h1 {
         font-family: "Raleway";

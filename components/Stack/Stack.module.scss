@@ -23,12 +23,17 @@
       border: none;
       cursor: pointer;
     }
+    button:hover {
+      border: 1px solid rgba(123, 74, 226);
+      background-color: transparent;
+      transition: 1s;
+    }
     h1 {
       padding-top: 28px;
       font-family: "Raleway";
       font-style: normal;
       font-weight: 800;
-      font-size: 48px;
+      font-size: 40px;
       line-height: 56px;
       text-align: center;
       color: #ffffff;

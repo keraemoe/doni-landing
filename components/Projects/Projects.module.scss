@@ -5,28 +5,35 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    button {
-      font-family: "Raleway";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 23px;
-      display: flex;
-      align-items: center;
-      color: #7b4ae2;
-      background: rgba(123, 74, 226, 0.1);
-      border-radius: 16px;
-      width: 144px;
-      height: 45px;
-      border: none;
-      padding: 15px;
-      margin-top: 20%;
-    }
+
     .tag {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 44px;
+      align-items: start;
+      flex-direction: column;
+      gap: 15px;
+      button {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        white-space: nowrap;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #7b4ae2;
+        background: rgba(123, 74, 226, 0.1);
+        border-radius: 16px;
+        width: 144px;
+        height: 45px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover{
+        border: 1px solid rgba(123, 74, 226, );
+        background-color: transparent;
+        transition: 1s ;
+      }
       h1 {
         font-family: "Raleway";
         font-style: normal;
@@ -99,27 +106,10 @@
           display: flex;
           align-items: center;
           button {
-            justify-content: center;
-            width: 40%;
-          }
-          gap: 8px;
-          button:nth-of-type(1) {
-            background: rgba(123, 74, 226, 0.1);
-            border-radius: 8px;
-            height: 30px;
-            font-family: "Raleway";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 19px;
-            display: flex;
-            align-items: center;
+            border: none;
             text-align: center;
-            // justify-content:center;
-            color: #7b4ae2;
-            cursor: pointer;
-          }
-          button:nth-of-type(2) {
+            justify-content: center;
+            width: 45%;
             background: rgba(123, 74, 226, 0.1);
             border-radius: 8px;
             white-space: nowrap;
@@ -135,6 +125,12 @@
             color: #7b4ae2;
             cursor: pointer;
           }
+          button:hover {
+            border: 1px solid rgba(123, 74, 226, );
+            background-color: transparent;
+            transition: 1s ;
+          }
+          gap: 8px;
         }
         img {
           border-radius: 8px;
@@ -160,15 +156,15 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 930px) {
   .container {
     .projects {
+      .tag {
+        padding: 100px 0 0 0;
+      }
       .cards {
         justify-content: center;
         gap: 30px;
-      }
-      button {
-        display: none;
       }
     }
   }
@@ -178,15 +174,16 @@
   .container {
     .projects {
       .tag {
+        align-items: center;
+
         h1 {
           font-size: 35px;
         }
         .tab {
+          align-self: center;
+          flex-direction: column;
           .tab_btn {
             font-size: 14px;
-            line-height: 20px;
-            width: 104px;
-            height: 60px;
           }
         }
       }
@@ -200,7 +197,8 @@
     width: 100%;
     .projects {
       .tag {
-justify-content: center;
+        align-items: center;
+        padding: 50px 0 0 0;
         h1 {
           font-size: 25px;
         }

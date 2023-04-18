@@ -15,7 +15,7 @@ const TestimonyCard = () => {
       <div className={s.container}>
         <Swiper
           autoplay={{ delay: 2000 }}
-          slidesPerView={1}
+          // slidesPerView={3}
           spaceBetween={30}
           loop={true}
           centeredSlides={true}
