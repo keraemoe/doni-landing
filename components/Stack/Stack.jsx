@@ -4,8 +4,6 @@ import { motion, useAnimationFrame } from "framer-motion";
 import { tech, outtech } from "../../constants/constants";
 
 const Stack = () => {
-
-  
   const ref = useRef(null);
 
   useAnimationFrame((t) => {
@@ -13,13 +11,12 @@ const Stack = () => {
     ref.current.style.transform = `translateY(${y}px) `;
   });
 
-
   return (
     <>
       <div id="skill" className={s.container}>
         <div className={s.stack}>
           <motion.button
-          ref={ref}
+            ref={ref}
             initial="hidden"
             transition={{ duration: 0.7 }}
             whileInView="visible"

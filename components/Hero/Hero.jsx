@@ -125,7 +125,7 @@ const Hero = () => {
           </motion.h2>
           <div className={s.sotcial_network}>
             <motion.a
-            ref={ref5}
+              ref={ref5}
               initial="hidden"
               transition={{ duration: 0.7 }}
               whileInView="visible"
@@ -138,8 +138,7 @@ const Hero = () => {
               <img src="/linkedin.svg" alt="in" />
             </motion.a>
             <motion.a
-            ref={ref6}
-
+              ref={ref6}
               initial="hidden"
               transition={{ duration: 0.7 }}
               whileInView="visible"
@@ -152,8 +151,7 @@ const Hero = () => {
               <img src="/githubHeader.png" alt="github" />
             </motion.a>
             <motion.a
-            ref={ref7}
-
+              ref={ref7}
               initial="hidden"
               transition={{ duration: 0.7 }}
               whileInView="visible"

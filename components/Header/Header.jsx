@@ -5,23 +5,26 @@ const Header = () => {
   return (
     <div className={s.container}>
       <div className={s.content}>
-        <motion.img 
-             initial="hidden"
-             transition={{ duration: 0.7 }}
-             whileInView="visible"
-             variants={{
-               hidden: { y: -20, scale: 0.9 },
-               visible: { y: 10, scale: 1 },
-             }}
-        className={s.header_logo} src="/Logo.svg" alt="logo" />
+        <motion.img
+          initial="hidden"
+          transition={{ duration: 0.7 }}
+          whileInView="visible"
+          variants={{
+            hidden: { scale: 0 },
+            visible: { scale: 1 },
+          }}
+          className={s.header_logo}
+          src="/Logo.svg"
+          alt="logo"
+        />
         <ul>
           <motion.li
             initial="hidden"
             transition={{ duration: 0.7 }}
             whileInView="visible"
             variants={{
-              hidden: { y: -20, scale: 0.9 },
-              visible: { y: 10, scale: 1 },
+              hidden: { scale: 0 },
+              visible: { scale: 1 },
             }}
           >
             <a href="#">Home</a>
@@ -31,8 +34,8 @@ const Header = () => {
             transition={{ duration: 0.7 }}
             whileInView="visible"
             variants={{
-              hidden: { y: -20, scale: 0.9 },
-              visible: { y: 10, scale: 1 },
+              hidden: { scale: 0 },
+              visible: { scale: 1 },
             }}
           >
             <a href="#sobre">Sobre mim</a>
@@ -42,8 +45,8 @@ const Header = () => {
             transition={{ duration: 0.7 }}
             whileInView="visible"
             variants={{
-              hidden: { y: -20, scale: 0.9 },
-              visible: { y: 10, scale: 1 },
+              hidden: { scale: 0 },
+              visible: { scale: 1 },
             }}
           >
             <a href="#partfolio">Portfólio</a>
@@ -53,8 +56,8 @@ const Header = () => {
             transition={{ duration: 0.7 }}
             whileInView="visible"
             variants={{
-              hidden: { y: -20, scale: 0.9 },
-              visible: { y: 10, scale: 1 },
+              hidden: { scale: 0 },
+              visible: { scale: 1 },
             }}
           >
             <a href="#skill">Skills</a>
@@ -64,8 +67,8 @@ const Header = () => {
             transition={{ duration: 0.7 }}
             whileInView="visible"
             variants={{
-              hidden: { y: -20, scale: 0.9 },
-              visible: { y: 10, scale: 1 },
+              hidden: { scale: 0 },
+              visible: { scale: 1 },
             }}
           >
             <a href="#carreira">Carreira</a>
@@ -75,8 +78,8 @@ const Header = () => {
             transition={{ duration: 0.7 }}
             whileInView="visible"
             variants={{
-              hidden: { y: -20, scale: 0.9 },
-              visible: { y: 10, scale: 1 },
+              hidden: { scale: 0 },
+              visible: { scale: 1 },
             }}
           >
             <a href="#rek">Recomendações</a>
@@ -86,8 +89,8 @@ const Header = () => {
             transition={{ duration: 0.7 }}
             whileInView="visible"
             variants={{
-              hidden: { y: -20, scale: 0.9 },
-              visible: { y: 10, scale: 1 },
+              hidden: { scale: 0 },
+              visible: { scale: 1 },
             }}
           >
             <a href="#contact">Contato</a>

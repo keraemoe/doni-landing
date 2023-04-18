@@ -21,15 +21,15 @@ const TestimonyCard = () => {
           centeredSlides={true}
           breakpoints={{
             0: {
-              centeredSlides: 'true'
+              centeredSlides: "true",
             },
             425: {
-              slidesPerView: '3',
-            }
+              slidesPerView: "3",
+            },
           }}
           navigation={{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
           }}
           modules={[Autoplay, Navigation]}
           className="mySwiper"
@@ -70,11 +70,12 @@ const TestimonyCard = () => {
             hidden: { scale: 0 },
             visible: { scale: 1 },
           }}
-          className={s.navigate}>
+          className={s.navigate}
+        >
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </motion.div>
-      </div >
+      </div>
     </>
   );
 };

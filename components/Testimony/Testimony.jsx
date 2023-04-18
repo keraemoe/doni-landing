@@ -1,10 +1,9 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import s from "./Testimony.module.scss";
 import TestimonyCard from "../TestimonyCard/TestimonyCard";
-import { motion , useAnimationFrame} from "framer-motion";
+import { motion, useAnimationFrame } from "framer-motion";
 
 const Testimony = () => {
-
   const ref = useRef(null);
 
   useAnimationFrame((t) => {
@@ -12,12 +11,11 @@ const Testimony = () => {
     ref.current.style.transform = `translateY(${y}px) `;
   });
 
-
   return (
     <>
       <div id="rek" className={s.container}>
         <motion.button
-        ref={ref}
+          ref={ref}
           initial="hidden"
           transition={{ duration: 0.7 }}
           whileInView="visible"
