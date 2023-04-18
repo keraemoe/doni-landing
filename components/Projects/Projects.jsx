@@ -6,10 +6,28 @@ import { slides } from "../../constants/constants";
 
 const Projects = () => {
   const ref = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
 
   useAnimationFrame((t) => {
     const y = (1 + Math.sin(t / 800)) * -10;
     ref.current.style.transform = `translateY(${y}px) `;
+  });
+
+  useAnimationFrame((t) => {
+    const y = (1 + Math.sin(t / 800)) * -7;
+    ref2.current.style.transform = `translateY(${y}px) `;
+  });
+
+  useAnimationFrame((t) => {
+    const y = (1 + Math.sin(t / 850)) * -7;
+    ref3.current.style.transform = `translateY(${y}px) `;
+  });
+
+  useAnimationFrame((t) => {
+    const y = (1 + Math.sin(t / 900)) * -7;
+    ref4.current.style.transform = `translateY(${y}px) `;
   });
 
   return (
@@ -42,6 +60,7 @@ const Projects = () => {
             </motion.h1>
             <div className={s.tab}>
               <motion.button
+                ref={ref2}
                 initial="hidden"
                 transition={{ duration: 0.5 }}
                 whileInView="visible"
@@ -51,10 +70,10 @@ const Projects = () => {
                 }}
                 className={s.tab_btn}
               >
-                {" "}
                 <img src="/ui.png" alt="ui" /> UI Design
               </motion.button>
               <motion.button
+                ref={ref3}
                 initial="hidden"
                 transition={{ duration: 0.6 }}
                 whileInView="visible"
@@ -64,10 +83,10 @@ const Projects = () => {
                 }}
                 className={s.tab_btn}
               >
-                {" "}
                 <img src="/pal.svg" alt="pal" /> Design
               </motion.button>
               <motion.button
+                ref={ref4}
                 initial="hidden"
                 transition={{ duration: 0.7 }}
                 whileInView="visible"
@@ -77,7 +96,6 @@ const Projects = () => {
                 }}
                 className={s.tab_btn}
               >
-                {" "}
                 <img src="/ui.png" alt="ui" /> UI Design
               </motion.button>
             </div>
