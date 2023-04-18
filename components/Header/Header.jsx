@@ -5,18 +5,22 @@ const Header = () => {
   return (
     <div className={s.container}>
       <div className={s.content}>
-        <motion.img
-          initial="hidden"
-          transition={{ duration: 0.7 }}
-          whileInView="visible"
-          variants={{
-            hidden: { scale: 0 },
-            visible: { scale: 1 },
-          }}
-          className={s.header_logo}
-          src="/Logo.svg"
-          alt="logo"
-        />
+        <a href="#">
+          {" "}
+          <motion.img
+            initial="hidden"
+            transition={{ duration: 0.7 }}
+            whileInView="visible"
+            variants={{
+              hidden: { scale: 0 },
+              visible: { scale: 1 },
+            }}
+            className={s.header_logo}
+            src="/Logo.svg"
+            alt="logo"
+          />
+        </a>
+
         <ul>
           <motion.li
             initial="hidden"
