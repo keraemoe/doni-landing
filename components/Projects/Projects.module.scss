@@ -29,10 +29,10 @@
         border: none;
         cursor: pointer;
       }
-      button:hover{
-        border: 1px solid rgba(123, 74, 226, );
+      button:hover {
+        border: 1px solid rgba(123, 74, 226);
         background-color: transparent;
-        transition: 1s ;
+        transition: 1s;
       }
       h1 {
         font-family: "Raleway";
@@ -126,9 +126,9 @@
             cursor: pointer;
           }
           button:hover {
-            border: 1px solid rgba(123, 74, 226, );
+            border: 1px solid rgba(123, 74, 226);
             background-color: transparent;
-            transition: 1s ;
+            transition: 1s;
           }
           gap: 8px;
         }
@@ -174,16 +174,17 @@
   .container {
     .projects {
       .tag {
-        align-items: center;
 
+        align-items: center;
         h1 {
           font-size: 35px;
         }
         .tab {
-          align-self: center;
-          flex-direction: column;
+          display: flex;
           .tab_btn {
-            font-size: 14px;
+            height: 50px;
+            width: 110px;
+            font-size: 12px;
           }
         }
       }
@@ -191,7 +192,35 @@
   }
 }
 
+
 @media screen and (max-width: 425px) {
+  .container {
+    .projects {
+      .tag {
+
+        align-items: center;
+        h1 {
+          font-size: 32px;
+          white-space: nowrap;
+        }
+        .tab {
+          display: flex;
+          .tab_btn {
+            height: 45px;
+            width: 100px;
+            font-size: 12px;
+            img{
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 368px) {
   .container {
     gap: 10px;
     width: 100%;
@@ -203,7 +232,16 @@
           font-size: 25px;
         }
         .tab {
-          flex-direction: column;
+       .tab_btn {
+        height: 40px;
+        width: 90px;
+        font-size: 12px;
+        img{
+          width: 18px;
+          height: 18px;
+        }
+      }
+
         }
       }
 

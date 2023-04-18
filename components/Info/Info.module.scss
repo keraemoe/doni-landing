@@ -52,10 +52,10 @@
         color: #7b4ae2;
         border: none;
       }
-      button:hover{
-        border: 1px solid rgba(123, 74, 226, );
+      button:hover {
+        border: 1px solid rgba(123, 74, 226);
         background-color: transparent;
-        transition: 1s ;
+        transition: 1s;
       }
       h1 {
         font-family: "Raleway";
@@ -65,14 +65,18 @@
         line-height: 56px;
         color: #ffffff;
       }
-      p {
-        font-family: "Raleway";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
-        color: rgba(255, 255, 255, 0.5);
-        transform: rotate(-0.03deg);
+      .texts {
+     
+
+        h6 {
+          font-family: "Raleway";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          color: rgba(255, 255, 255, 0.5);
+          transform: rotate(-0.03deg);
+        }
       }
     }
   }

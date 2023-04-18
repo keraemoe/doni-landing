@@ -4,40 +4,96 @@ import { motion } from "framer-motion";
 const Header = () => {
   return (
     <div className={s.container}>
-      <motion.div
-        initial="hidden"
-        transition={{ duration: 0.7 }}
-        whileInView="visible"
-        variants={{
-          hidden: { y: -20, scale: 0.9 },
-          visible: { y: 10, scale: 1 },
-        }}
-        className={s.content}>
-        <img className={s.header_logo} src="/Logo.svg" alt="logo" />
+      <div className={s.content}>
+        <motion.img 
+             initial="hidden"
+             transition={{ duration: 0.7 }}
+             whileInView="visible"
+             variants={{
+               hidden: { y: -20, scale: 0.9 },
+               visible: { y: 10, scale: 1 },
+             }}
+        className={s.header_logo} src="/Logo.svg" alt="logo" />
         <ul>
-          <li>
+          <motion.li
+            initial="hidden"
+            transition={{ duration: 0.7 }}
+            whileInView="visible"
+            variants={{
+              hidden: { y: -20, scale: 0.9 },
+              visible: { y: 10, scale: 1 },
+            }}
+          >
             <a href="#">Home</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            transition={{ duration: 0.7 }}
+            whileInView="visible"
+            variants={{
+              hidden: { y: -20, scale: 0.9 },
+              visible: { y: 10, scale: 1 },
+            }}
+          >
             <a href="#sobre">Sobre mim</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            transition={{ duration: 0.7 }}
+            whileInView="visible"
+            variants={{
+              hidden: { y: -20, scale: 0.9 },
+              visible: { y: 10, scale: 1 },
+            }}
+          >
             <a href="#partfolio">Portfólio</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            transition={{ duration: 0.7 }}
+            whileInView="visible"
+            variants={{
+              hidden: { y: -20, scale: 0.9 },
+              visible: { y: 10, scale: 1 },
+            }}
+          >
             <a href="#skill">Skills</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            transition={{ duration: 0.7 }}
+            whileInView="visible"
+            variants={{
+              hidden: { y: -20, scale: 0.9 },
+              visible: { y: 10, scale: 1 },
+            }}
+          >
             <a href="#carreira">Carreira</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            transition={{ duration: 0.7 }}
+            whileInView="visible"
+            variants={{
+              hidden: { y: -20, scale: 0.9 },
+              visible: { y: 10, scale: 1 },
+            }}
+          >
             <a href="#rek">Recomendações</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            transition={{ duration: 0.7 }}
+            whileInView="visible"
+            variants={{
+              hidden: { y: -20, scale: 0.9 },
+              visible: { y: 10, scale: 1 },
+            }}
+          >
             <a href="#contact">Contato</a>
-          </li>
+          </motion.li>
         </ul>
-      </motion.div>
+      </div>
     </div>
   );
 };
